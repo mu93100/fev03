@@ -12,14 +12,14 @@ body{
 header{
     display: flex;
     align-items: center;
-    margin: 5rem 0 0 4rem;
-    width: 100%;
+    margin: 3rem 0 0 4rem;
+    /* width: 100%; */
     position: relative;
 }
 nav{
     background-color: rgba(59, 64, 86, 0.745);
-    width: 55%;
-    background-position-x: right 0px;
+    width: 54%;
+    background-position-x: right 0;
     position: absolute; right: 0px;
     /* z-index: 2; */
 
@@ -33,7 +33,7 @@ nav{
 }
 hr{
     width: 40%;
-    border: 2px solid rgba(59, 64, 86, 0.576);
+    border: 1px solid rgba(59, 64, 86, 0.774);
     z-index: 1;
     margin-left: 4rem;
 }
@@ -71,8 +71,8 @@ h3{
     color: rgb(208, 214, 249);
     font-family: "Barlow Condensed", serif;
     font-weight: 300;
-    font-size: 1.6em;
-    letter-spacing: 2px;
+    font-size: 1.7em;
+    letter-spacing: 4px;
 }
 h1{
     color: white;
@@ -98,14 +98,6 @@ p{
     position: relative;
 }
 .container2 button{
-    color: rgb(11, 13, 23);
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-size: 2em;
-    width: 14rem;
-    height: 12rem;
-    border-radius: 50%;
-    border: none;
     position:absolute; 
     position-area: center;
 }
@@ -114,31 +106,9 @@ p{
     background-color: rgba(255, 255, 255, 0.123);
 }                              l'éclipse--------*/
 
-.container2 button{
-    color: rgb(173, 176, 198);
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-size: 1.5em;
-    width: 12rem;
-    height: 12rem;
-    border-radius: 50%;
-    border: none;
-    position:absolute; 
-    position-area: center;
-    /* box-shadow: 0px 0px 0px 3.5rem  rgba(255, 255, 255, 0.123); */
-}
+
 
 .container2 button:active{
-    color: rgb(173, 176, 198);
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-size: 1.5em;
-    width: 12rem;
-    height: 12rem;
-    border-radius: 50%;
-    border: none;
-    position:absolute; 
-    position-area: center;
     box-shadow: 0px 0px 0px 3.5rem  rgba(255, 255, 255, 0.123);
 }
 @media screen and (width <= 768px){
@@ -159,7 +129,35 @@ p{
     }
     main{
         flex-direction: column;
+        text-align: center;
+        margin: 6rem 9rem auto 9rem;
+        gap: 4rem;
+
     }
+    
+.container1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 2rem;          /* gap avec display flex TOUJOURS */
+}
+.container2{
+    margin: 0 auto;
+    /* padding-left: 20rem;  */
+    position: relative;
+}
+.container2 button{
+    color: rgb(11, 13, 23);
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-size: 2em;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    border: none;
+    position:absolute; 
+    position-area: center;
+}
     
 }
 @media screen and (max-width: 375px){
